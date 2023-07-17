@@ -11,7 +11,7 @@ import android.os.Bundle;
 import com.example.dam_examen_final_quispe.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Main extends AppCompatActivity {
+public class Main extends AppCompatActivity implements NotasInteractionListener  {
 
 
 
@@ -35,4 +35,18 @@ public class Main extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.navView, navController);
     }
 
+    @Override
+    public void editNotaClick(Nota nota) {
+
+    }
+
+    @Override
+    public void eliminaNotaClick(Nota nota) {
+
+    }
+
+    @Override
+    public void favoritaNotaClick(Nota nota) {
+
+    }
 }
